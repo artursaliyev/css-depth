@@ -1,91 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Бегущий город</h1>
-      </header>
-      <div class="container">
-        <main class="main">
-          <h2>Полезные советы</h2>
 
-          <div class="row">
-            <div class="column-6">
-              <div class="media">
-                <img
-                  class="media-image"
-                  src="https://picsum.photos/id/100/100/100"
-                  alt=""
-                />
-                <div class="media-body">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Delectus, incidunt.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="column-6">
-              <div class="media">
-                <img
-                  class="media-image"
-                  src="https://picsum.photos/id/101/100/100"
-                  alt=""
-                />
-                <div class="media-body">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Delectus, incidunt.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column-6">
-              <div class="media">
-                <img
-                  class="media-image"
-                  src="https://picsum.photos/id/102/100/100"
-                  alt=""
-                />
-                <div class="media-body">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Delectus, incidunt.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="column-6">
-              <div class="media">
-                <img
-                  class="media-image"
-                  src="https://picsum.photos/id/103/100/100"
-                  alt=""
-                />
-                <div class="media-body">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Delectus, incidunt.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="#">Glavnaya</a></li>
+          <li><a href="#">Vozmojnosti</a></li>
+          <li><a href="#">Seni</a></li>
+          <li><a href="#">Podderjka</a></li>
+          <li class="nav-right"><a href="#">O Nas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex">
+      <div class="column-main tile">
+        <h1>Pravilniy e</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cumque commodi quia consectetur porro
+          assumenda quaerat officia odio numquam tempora.</p>
+        <h1>Pravilniy e</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cumque commodi quia consectetur porro
+          assumenda quaerat officia odio numquam tempora.</p>
+        <h1>Pravilniy e</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cumque commodi quia consectetur porro
+          assumenda quaerat officia odio numquam tempora.</p>
+        <h1>Pravilniy e</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cumque commodi quia consectetur porro
+          assumenda quaerat officia odio numquam tempora.</p>
+        <h1>Pravilniy e</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cumque commodi quia consectetur porro
+          assumenda quaerat officia odio numquam tempora.</p>
+        <h1>Pravilniy e</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cumque commodi quia consectetur porro
+          assumenda quaerat officia odio numquam tempora.</p>
       </div>
-    </div>
-  </body>
+
+      <div class="column-sidebar">
+        <div class="tile">
+          <form action="#" class="login-form">
+            <h3>Authorization</h3>
+
+            <p>
+              <label for="username">LOGIN:</label>
+              <input type="text" id="username" name="username">
+            </p>
+
+            <p>
+              <label for="password">PASSWORD:</label>
+              <input type="password" id="password" name="password">
+            </p>
+            <button type="submit">Voyti</button>
+          </form>
+        </div>
+        <div class="tile centered">
+          <small>Tarifnie palani ot </small>
+          <div class="cost">
+            <span class="cost-currency">P</span>
+            <span class="cost-roubles">999</span>
+            <span class="cost-kopecks">.00</span>
+          </div>
+          <a href="#" class="cta-button">Zaregistrirovatsya</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+
 </html>
