@@ -10,51 +10,74 @@
 
 <body>
 
-  <div class="portfolio">
-    <figure class="featured">
-      <img
-        src="//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
-        alt="">
-      <figcaption>image1</figcaption>
-    </figure>
-    <figure>
-      <img
-        src="//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
-        alt="">
-      <figcaption>image2</figcaption>
-    </figure>
-    <figure class="featured">
-      <img
-        src="//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
-        alt="">
-      <figcaption>image3</figcaption>
-    </figure>
-    <figure>
-      <img
-        src="//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
-        alt="">
-      <figcaption>image4</figcaption>
-    </figure>
-    <figure class="featured">
-      <img
-        src="//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
-        alt="">
-      <figcaption>image5</figcaption>
-    </figure>
-    <figure>
-      <img
-        src="//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
-        alt="">
-      <figcaption>image6</figcaption>
-    </figure>
-    <figure>
-      <img
-        src="//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
-        alt="">
-      <figcaption>image7</figcaption>
-    </figure>
+  <header class="top-banner">
+    <div class="top-banner-inner">
+      <p>
+        Подпишитесь на нашу ежемесячную рассылку новостей
+        модального окна
+        из мира кофе. Нажмите кнопку:
+        <button id="open">Subscribe</button></p>
+    </div>
+  </header>
+
+
+
+  <div class="modal" id="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-body">
+      <button class="modal-close" id="close">Close</button>
+      <h2>Кофейные новости</h2>
+      <р>Подпишитесь на нашу ежемесячную рассылку. Никакого спама.
+        Мы гарантируем!</р>
+      <form>
+        <p>
+          <label for="email">AApec email:</label>
+          <input type=" text" name="email" />
+        </p>
+        <p><button type="submit">Send</button> </p>
+      </form>
+    </div>
   </div>
 
+  <div class="container">
+    <nav>
+      <div class="dropdown">
+        <div class="dropdown-label">Menu</div>
+        <div class="dropdown-menu">
+          <ul class="submenu">
+            <li><a href="/1">name1</a></li>
+            <li><a href="/2">name2</a></li>
+            <li><a href="/3">name3</a></li>
+            <li><a href="/4">name4</a></li>
+            <li><a href="/5">name5</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1>Профессиональная техника для обжарщиков</h1>
+  </div>
+
+
+  <script type="text/javascript">
+    const modal = document.querySelector("#modal");
+    const openBtn = document.querySelector("#open");
+    const closeBtn = document.querySelector("#close");
+
+    openBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      modal.style.display = "block";
+    })
+
+    closeBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      modal.style.display = "none";
+    })
+
+    modal.addEventListener("click", (event) => {
+      event.preventDefault();
+      modal.style.display = "none"
+    })
+  </script>
 </body>
 
 </html>
