@@ -1,92 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
+  <body>
+    <header id="header" class="page-header">
+      <div class="title">
+        <h1>Профессиональная техника для обжарщиков</h1>
+        <div class="slogan">Мы любим кофе</div>
+      </div>
+    </header>
 
-<body>
-
-  <header class="top-banner">
-    <div class="top-banner-inner">
-      <p>
-        Подпишитесь на нашу ежемесячную рассылку новостей
-        модального окна
-        из мира кофе. Нажмите кнопку:
-        <button id="open">Subscribe</button></p>
-    </div>
-  </header>
-
-  <div class="modal" id="modal">
-    <div class="modal-backdrop"></div>
-    <div class="modal-body">
-      <button class="modal-close" id="close">Close</button>
-      <h2>Кофейные новости</h2>
-      <р>Подпишитесь на нашу ежемесячную рассылку. Никакого спама.
-        Мы гарантируем!</р>
-      <form>
-        <p>
-          <label for="email">AApec email:</label>
-          <input type=" text" name="email" />
-        </p>
-        <p><button type="submit">Send</button> </p>
-      </form>
-    </div>
-  </div>
-
-  <div class="container">
-    <main class="col-main">
-      <nav>
-        <div class="dropdown">
-          <div class="dropdown-label">Menu</div>
-          <div class="dropdown-menu">
-            <ul class="submenu">
-              <li><a href="/1">name1</a></li>
-              <li><a href="/2">name2</a></li>
-              <li><a href="/3">name3</a></li>
-              <li><a href="/4">name4</a></li>
-              <li><a href="/5">name5</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <h1>Профессиональная техника для обжарщиков</h1>
-    </main>
-
-    <aside class="col-sidebar">
-      <div class="affix">
-        <ul class="submenu">
-          <li><a href="/1">name1</a></li>
-          <li><a href="/2">name2</a></li>
-          <li><a href="/3">name3</a></li>
-          <li><a href="/4">name4</a></li>
-          <li><a href="/5">name5</a></li>
+    <nav class="menu" id="main-menu">
+      <button class="menu-toggle" id="toggle-menu">свернуть меню</button>
+      <div class="menu-dropdown">
+        <ul class="nav-menu">
+          <li><a href="/1">О нас</a></li>
+          <li><a href="/2">Магазин</a></li>
+          <li><a href="/3">Меню</a></li>
+          <li><a href="/4">Приготовление</a></li>
         </ul>
       </div>
+    </nav>
+
+    <aside class="hero" id="hero">
+      Добро пожаловать на сайт нашей компании! Всеми силами мы стараемся
+      поддерживать репутацию лучшей компании для обжарщиков.
     </aside>
-  </div>
 
+    <main id="main">
+      <div class="row">
+        <section class="column">
+          <h2 class="subtitle">Lorem, ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            ipsam perferendis ratione? <a href="#">Incidunt,</a> aliquam magni.
+          </p>
+        </section>
+        <section class="column">
+          <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            quisquam nam facere voluptates eaque
+            <a href="#">consequatur</a> quod doloribus velit quo impedit.
+          </p>
+        </section>
+        <section class="column">
+          <h2 class="subtitle">Lorem, ipsum dolor.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            exercitationem, impedit obcaecati
+            <a href="#">officiis</a> voluptates officia.
+          </p>
+        </section>
+      </div>
+    </main>
 
-  <script type="text/javascript">
-    const modal = document.querySelector("#modal");
-    const openBtn = document.querySelector("#open");
-    const closeBtn = document.querySelector("#close");
-
-    openBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      modal.style.display = "block";
-    })
-
-    closeBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      modal.style.display = "none";
-    })
-
-    
-  </script>
-</body>
-
+    <script type="text/javascript">
+      (function () {
+        const button = document.querySelector("#toggle-menu");
+        button.addEventListener("click", (event) => {
+          event.preventDefault();
+          const menu = document.querySelector("#main-menu");
+          menu.classList.toggle("is-open");
+        });
+      })();
+    </script>
+  </body>
 </html>
