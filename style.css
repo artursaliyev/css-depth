@@ -2,6 +2,11 @@
   box-sizing: border-box;
   font-size: calc(1vw + 0.6em);
 }
+@media (min-width: 50em) {
+  :root {
+    font-size: 1.125em;
+  }
+}
 *,
 *::before,
 *::after {
@@ -36,6 +41,11 @@ a:active {
     padding: 1em;
   }
 }
+@media (min-width: 50em) {
+  .page-header {
+    padding: 1em 4em;
+  }
+}
 .title > h1 {
   color: #333;
   text-transform: uppercase;
@@ -66,6 +76,11 @@ a:active {
     font-size: 1.2rem;
   }
 }
+@media (min-width: 50em) {
+  .hero {
+    padding: 7em 6em;
+  }
+}
 /*  Основной раздел */
 main {
   padding: 1em;
@@ -73,6 +88,11 @@ main {
 @media (min-width: 35em) {
   main {
     padding: 2em 1em;
+  }
+}
+@media (min-width: 50em) {
+  main {
+    padding: 2em 4em;
   }
 }
 .subtitle {
@@ -132,4 +152,76 @@ main {
   padding: 0.8em 1em;
   color: #fff;
   font-weight: normal;
+}
+
+@media (min-width: 35em) {
+  .menu-toggle {
+    display: none;
+  }
+  .menu-dropdown {
+    display: block;
+    position: static;
+  }
+}
+
+@media (min-width: 35em) {
+  .nav-menu {
+    display: flex;
+    border: 0;
+    padding: 0 1em;
+  }
+  .nav-menu > li {
+    flex: 1;
+  }
+  .nav-menu li + li {
+    border: 0;
+  }
+  .nav-menu > li > a {
+    padding: 0.3em;
+    text-align: center;
+  }
+}
+@media (min-width: 35em) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.75em;
+    margin-right: -0.75em;
+  }
+  .column {
+    flex: 0 1 45%;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+  }
+}
+@media (min-width: 50em) {
+  .nav-menu {
+    padding: 0.5em 4em;
+  }
+}
+@media (min-width: 50em) {
+  .row {
+    justify-content: space-around;
+  }
+  .column {
+    flex: 0 1 30%;
+  }
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 35em) {
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+  thead tr {
+    display: none;
+  }
 }
